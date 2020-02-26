@@ -5,7 +5,7 @@ pipeline {
         stage('Git Clone') { 
             steps {
                  echo 'Cloning...'
-                  git 'https://debashis.gopal:jivateam2@gitlab.jispl.com/Products/MagentoNAVPlatinum.git'
+                //  git 'https://debashis.gopal:jivateam2@gitlab.jispl.com/Products/MagentoNAVPlatinum.git'
 				   bat 'cd MagentoNAVPlatinum' 
 				    bat 'git checkout dev'
             }
