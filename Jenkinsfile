@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('composer') { 
             steps {
-                bat 'composer install'
-				bat 'composer update'
+              //  bat 'composer install'
+		//		bat 'composer update'
             }
         }
 		stage('Remove-Item') { 
             steps {
-                bat 'Remove-Item MagentoNAVPlatinum/ -Force -Recurse'
-				bat 'Remove-Item app/code/ -Force -Recurse'
+           //     bat 'Remove-Item MagentoNAVPlatinum/ -Force -Recurse'
+	//			bat 'Remove-Item app/code/ -Force -Recurse'
             }
         }          
         stage('Git Clone') { 
